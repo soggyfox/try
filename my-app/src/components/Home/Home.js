@@ -38,7 +38,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/* add somehting here about template created by Soumyajit https://github.com/soumyajit4419 */}
 
       <Container fluid className="footer">
         <Row>
