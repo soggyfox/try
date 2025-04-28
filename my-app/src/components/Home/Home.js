@@ -32,25 +32,12 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
 
-      <Container fluid className="footer">
-        <Row>
-          <Col className="text-center py-3">
-            <small>
-              Appreciations for the template created by{" "} 
-              <a href="https://github.com/soumyajit4419" target="_blank" rel="noopener noreferrer" style={{color: 'rgba(0, 0, 255, 0.5)'}}>
-                Soumyajit
-              </a>
-            </small>
-          </Col>
-        </Row>
-      </Container>
     </section>
   );
 }

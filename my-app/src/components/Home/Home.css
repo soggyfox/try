@@ -1,0 +1,76 @@
+/* Fix for background stretching issues */
+.home-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .home-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    position: relative;
+  }
+  
+  /* Make sure the body and html have no margins */
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+.home-section {
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .home-content {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .home-header {
+    padding-bottom: 1.5rem;
+  }
+  
+  .home-logo {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 991px) {
+    .home-header {
+      text-align: center;
+    }
+    
+    .text-left {
+      text-align: center !important;
+    }
+    
+    .heading-name {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .home-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    
+    .heading-name {
+      font-size: 2rem;
+    }
+  }
