@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/ks.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 import {
   AiOutlineHome,
@@ -100,6 +100,17 @@ function NavBar() {
                 <AiOutlineGithub style={{ fontSize: "1.2em" }} />{" "}
               </Button>
             </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://www.linkedin.com/in/kevinsingpurwala2000/"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <AiOutlineLinkedin style={{ fontSize: "1.2em" }} />{" "}
+              </Button>
+            </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
