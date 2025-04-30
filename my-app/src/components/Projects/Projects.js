@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import maze from "../../Assets/Projects/maze.png";
 import proxy from "../../Assets/Projects/proxy.png";
 import sentiment from "../../Assets/Projects/sentiment.png";
@@ -10,7 +9,7 @@ import fakenews from "../../Assets/Projects/fakenewsdetect.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My  <strong className="purple">Projects </strong>
