@@ -1,0 +1,271 @@
+.resume-page-wrapper {
+  background: linear-gradient(to bottom, #0d1117 0%, #161b22 100%);
+  padding-top: 80px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 80px);
+}
+
+.resume-section {
+  position: relative !important;
+  padding: 40px 20px !important;
+  background: transparent !important;
+  max-width: 800px !important;
+}
+
+.resume-header {
+  margin-bottom: 50px;
+  text-align: center;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.resume-heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c770f0 0%, #c24b8b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+.resume-subtitle {
+  font-size: 1.3rem;
+  color: #b1bac4;
+  font-weight: 300;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.button-col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.action-btn {
+  padding: 12px 30px !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #c770f0 0%, #c24b8b 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(199, 112, 240, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(199, 112, 240, 0.5);
+  background: linear-gradient(135deg, #d980ff 0%, #d35b9b 100%) !important;
+  color: white !important;
+}
+
+.view-btn {
+  background: transparent !important;
+  color: #c770f0 !important;
+  border: 2px solid #c770f0 !important;
+  box-shadow: none;
+}
+
+.view-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(199, 112, 240, 0.1) !important;
+  border-color: #d980ff !important;
+  color: #d980ff !important;
+}
+
+.resume-preview {
+  margin-top: 50px;
+  padding: 30px;
+  background: rgba(199, 112, 240, 0.05);
+  border-left: 4px solid #c770f0;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out 0.3s both;
+}
+
+.resume-preview-row {
+  margin-top: 50px;
+  animation: fadeIn 1s ease-in-out 0.3s both;
+}
+
+.resume-preview-box {
+  background: rgba(199, 112, 240, 0.08);
+  border: 2px solid rgba(199, 112, 240, 0.3);
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.resume-preview-box:hover {
+  background: rgba(199, 112, 240, 0.12);
+  border-color: #c770f0;
+  box-shadow: 0 8px 20px rgba(199, 112, 240, 0.15);
+}
+
+.resume-preview-box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.pdf-preview {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px 0;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.pdf-preview .react-pdf__Document {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pdf-preview .react-pdf__Page {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preview-info {
+  text-align: center;
+  color: #b1bac4;
+  font-size: 0.9rem;
+  margin: 15px 0 0 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .resume-page-wrapper {
+    padding-top: 60px;
+  }
+
+  .resume-heading {
+    font-size: 2.2rem;
+  }
+
+  .resume-subtitle {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+  }
+
+  .button-col {
+    width: 100%;
+  }
+
+  .action-btn {
+    padding: 12px 25px !important;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .resume-preview-box {
+    padding: 25px;
+  }
+
+  .resume-preview-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .pdf-preview {
+    max-height: 380px;
+    padding: 8px;
+    margin: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-heading {
+    font-size: 1.8rem;
+  }
+
+  .resume-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    margin: 20px 0;
+  }
+
+  .action-btn {
+    padding: 10px 20px !important;
+    font-size: 0.9rem;
+    min-width: 160px;
+  }
+
+  .resume-preview-box {
+    margin-top: 20px;
+    padding: 18px;
+  }
+
+  .resume-preview-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .pdf-preview {
+    max-height: 320px;
+    padding: 5px;
+    margin: 10px 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
