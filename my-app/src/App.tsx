@@ -6,7 +6,7 @@ import About from "../src/components/About/About";
 import Projects from "../src/components/Projects/Projects";
 import Resume from "../src/components/Resume/ResumeNew";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
