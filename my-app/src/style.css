@@ -476,34 +476,45 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 100px !important;
+  padding-bottom: 50px !important;
   background-image: var(--section-background-color) !important;
-  min-height: 100vh;
+  min-height: auto;
   width: 100%;
 }
 
-.project-card {
-  padding-top: 50px !important;
+.project-heading {
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 30px !important;
   padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  color: white !important;
+}
+
+.project-card {
+  padding-top: 0 !important;
+  padding-bottom: 30px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   height: auto !important;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 5px 15px rgba(199, 112, 240, 0.2) !important;
   color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
+  background-color: rgba(20, 20, 30, 0.8) !important;
+  opacity: 1 !important;
+  transition: all 0.4s ease !important;
   height: 100% !important;
+  border: 1px solid rgba(199, 112, 240, 0.2) !important;
+  border-radius: 12px !important;
 }
 
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: translateY(-10px) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 12px 25px rgba(199, 112, 240, 0.35) !important;
+  border-color: #c770f0 !important;
 }
 
 .blog-card {
@@ -538,11 +549,12 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
-  height: 250px;
+  padding: 15px !important;
+  opacity: 1 !important;
+  border-radius: 8px !important;
+  height: 200px;
   object-fit: cover;
+  transition: all 0.3s ease !important;
 }
 
 .blog-img {
@@ -580,55 +592,75 @@ button:focus {
 /* --------- */
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 80px !important;
+  padding-bottom: 50px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
   width: 100%;
 }
 
+.quote-card-view {
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  color: white !important;
+  background-color: rgba(20, 20, 30, 0.6) !important;
+  border-radius: 12px !important;
+  padding: 30px !important;
+  transition: all 0.3s ease !important;
+}
+
+.quote-card-view:hover {
+  background-color: rgba(20, 20, 30, 0.8) !important;
+  border-color: #c770f0 !important;
+  box-shadow: 0 8px 20px rgba(199, 112, 240, 0.15) !important;
+}
+
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  font-size: 4rem !important;
+  margin: 12px !important;
+  padding: 12px !important;
+  opacity: 1 !important;
+  border: 2px solid rgba(199, 112, 240, 0.4) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 0 4px 12px rgba(199, 112, 240, 0.1) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.3s ease !important;
+  color: #c770f0 !important;
+}
+
+.tech-icons:hover {
+  transform: translateY(-5px) scale(1.08) !important;
+  overflow: hidden !important;
+  border-color: #c770f0 !important;
+  box-shadow: 0 8px 20px rgba(199, 112, 240, 0.25) !important;
+  color: #d980ff !important;
 }
 
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
+    font-size: 3.5rem !important;
   }
 }
 
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
-
 .tech-icon-images {
-  padding: 20px !important;
+  padding: 15px !important;
   line-height: 1.6 !important;
-}
-
-.quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
 }
 
 .about-activity {
   list-style: none !important;
   text-align: left !important;
-  padding-left: 1px !important;
+  padding-left: 0 !important;
+  margin: 10px 0 !important;
+  color: #b1bac4;
+}
+
+.about-activity svg {
+  color: #c770f0;
+  margin-right: 10px;
 }
 
 @media (max-width: 767px) {
@@ -738,6 +770,53 @@ button:focus {
   border-radius: 5px !important;
   line-height: 1.4 !important;
   transition: 0.3s ease !important;
+}
+
+.project-title {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  margin-bottom: 12px !important;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  background: linear-gradient(135deg, #c770f0 0%, #c24b8b 100%) !important;
+  border: none !important;
+  padding: 8px 15px !important;
+  font-size: 0.9rem !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.project-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 15px rgba(199, 112, 240, 0.4) !important;
+  background: linear-gradient(135deg, #d980ff 0%, #d35b9b 100%) !important;
+}
+
+.demo-btn {
+  background: rgba(199, 112, 240, 0.2) !important;
+  border: 2px solid #c770f0 !important;
+  color: #c770f0 !important;
+}
+
+.demo-btn:hover {
+  background: rgba(199, 112, 240, 0.3) !important;
+  border-color: #d980ff !important;
+  color: #d980ff !important;
 }
 
 .like-btn:hover {
